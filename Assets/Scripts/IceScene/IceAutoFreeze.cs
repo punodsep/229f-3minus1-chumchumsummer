@@ -6,6 +6,9 @@ public class IceAutoFreeze : MonoBehaviour
 
     private bool hasMoved = false;
 
+    [HideInInspector]
+    public bool isInFan = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -13,16 +16,14 @@ public class IceAutoFreeze : MonoBehaviour
 
     void Update()
     {
-        // เคยเคลื่อนที่จริงไหม
         if (rb.linearVelocity.magnitude > 0.1f)
         {
             hasMoved = true;
         }
 
-        // 👇 เงื่อนไข freeze
-        if (hasMoved && rb.linearVelocity.magnitude < 0.05f)
+        if (hasMoved && rb.linearVelocity.magnitude < 0.05f && !isInFan)
         {
-            rb.bodyType = RigidbodyType2D.Static;
+            rb.bodyType = RigidbodyType2D.Kinematic;
         }
     }
 }

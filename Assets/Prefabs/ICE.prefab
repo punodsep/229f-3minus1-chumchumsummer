@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 4299348633915992658}
   - component: {fileID: 4361112140880946344}
   m_Layer: 0
-  m_Name: Capsule
-  m_TagString: ice
+  m_Name: ICE
+  m_TagString: ICE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

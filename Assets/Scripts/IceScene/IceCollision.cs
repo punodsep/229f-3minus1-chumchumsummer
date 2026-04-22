@@ -6,7 +6,7 @@ public class IceCollision : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("ice"))
+        if (other.CompareTag("ICE"))
         {
             Destroy(other.gameObject);
 

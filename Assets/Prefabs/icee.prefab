@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: -6937077169247244588}
   - component: {fileID: 9160637789951878654}
   m_Layer: 0
-  m_Name: Circle
-  m_TagString: Untagged
+  m_Name: icee
+  m_TagString: ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -116,7 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &-6937077169247244588
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -165,4 +165,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b430be91a7c9141803f41c3a9c9d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freezeVelocity: 0.05

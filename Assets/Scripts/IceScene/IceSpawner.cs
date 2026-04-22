@@ -6,8 +6,8 @@ public class IceSpawner : MonoBehaviour
     public GameObject icePrefab;
     public BoxCollider2D spawnArea;
 
-    public float spawnDuration = 5f; // spawn นานกี่วิ
-    public float spawnDelay = 0.1f;  // เว้นนิดหน่อยกัน lag (แนะนำ 0.05 - 0.2)
+    public float spawnDuration = 5f;
+    public float spawnDelay = 0.1f;
 
     private bool isSpawning = false;
 
@@ -29,7 +29,7 @@ public class IceSpawner : MonoBehaviour
         {
             SpawnIce();
 
-            yield return new WaitForSeconds(spawnDelay); // spawn ถี่ๆ
+            yield return new WaitForSeconds(spawnDelay);
             timer += spawnDelay;
         }
 
