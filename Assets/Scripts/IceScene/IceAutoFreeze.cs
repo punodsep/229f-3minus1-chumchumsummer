@@ -6,8 +6,11 @@ public class IceAutoFreeze : MonoBehaviour
 
     private bool hasMoved = false;
 
-    [HideInInspector]
-    public bool isInFan = false;
+    [HideInInspector] public bool isInFan = false;
+    [HideInInspector] public bool isInCup = false;
+
+    public float destroyTime = 10f;
+    private float timer = 0f;
 
     void Start()
     {
@@ -24,6 +27,20 @@ public class IceAutoFreeze : MonoBehaviour
         if (hasMoved && rb.linearVelocity.magnitude < 0.05f && !isInFan)
         {
             rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
+        if (!isInCup)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= destroyTime)
+            {
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            timer = 0f;
         }
     }
 }

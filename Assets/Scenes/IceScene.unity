@@ -129,8 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 169541256}
   - component: {fileID: 169541257}
+  - component: {fileID: 169541258}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Cup Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,14 +146,14 @@ Transform:
   m_GameObject: {fileID: 169541255}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.40156737, y: 0.7190771, z: 1.4120306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 978474103}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &169541257
-BoxCollider2D:
+--- !u!58 &169541257
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,18 +186,20 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00000011920929, y: 1.5128423}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 2.4620755, y: 1.7513444}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1.19
+--- !u!114 &169541258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169541255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a94c190d1b3cd73478b9067234edd4d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,7 +5239,7 @@ GameObject:
   - component: {fileID: 978474101}
   - component: {fileID: 978474104}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Cup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5398,7 +5401,7 @@ GameObject:
   - component: {fileID: 1354619223}
   - component: {fileID: 1354619224}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Out
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5492,7 +5495,7 @@ GameObject:
   - component: {fileID: 1399624733}
   - component: {fileID: 1399624732}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5582,7 +5585,7 @@ GameObject:
   - component: {fileID: 1609714282}
   - component: {fileID: 1609714283}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: In
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5904,7 +5907,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1045189308472068138, guid: 59056627b7e92ca4f9b6d8de4a4e2b03, type: 3}
       propertyPath: m_Name
-      value: Capsule
+      value: ICE
       objectReference: {fileID: 0}
     - target: {fileID: 4953638188605324955, guid: 59056627b7e92ca4f9b6d8de4a4e2b03, type: 3}
       propertyPath: m_LocalPosition.x

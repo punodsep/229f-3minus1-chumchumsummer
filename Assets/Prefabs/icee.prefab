@@ -165,3 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b430be91a7c9141803f41c3a9c9d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInFan: 0
+  isInCup: 0
+  destroyTime: 3

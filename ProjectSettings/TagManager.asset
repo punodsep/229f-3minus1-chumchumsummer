@@ -6,7 +6,6 @@ TagManager:
   tags:
   - ice
   - ICE
-  - small
   layers:
   - Default
   - TransparentFX
