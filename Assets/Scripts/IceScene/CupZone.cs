@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CupZone : MonoBehaviour
 {
+    private int icecount = 0;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("ice"))
@@ -10,6 +11,14 @@ public class CupZone : MonoBehaviour
             if (ice != null)
             {
                 ice.isInCup = true;
+
+                if (!ice.counted)
+                {
+                    GameManager.Instance.currentCup.iceAmount++;
+                    ice.counted = true;
+                    icecount++;
+                    Debug.Log(icecount);
+                }
             }
         }
     }
@@ -22,6 +31,12 @@ public class CupZone : MonoBehaviour
             if (ice != null)
             {
                 ice.isInCup = false;
+
+                if (ice.counted)
+                {
+                    GameManager.Instance.currentCup.iceAmount--;
+                    ice.counted = false;
+                }
             }
         }
     }

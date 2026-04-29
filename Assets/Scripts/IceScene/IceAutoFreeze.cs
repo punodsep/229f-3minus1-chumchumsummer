@@ -9,6 +9,8 @@ public class IceAutoFreeze : MonoBehaviour
     [HideInInspector] public bool isInFan = false;
     [HideInInspector] public bool isInCup = false;
 
+    [HideInInspector] public bool counted = false;
+
     public float destroyTime = 10f;
     private float timer = 0f;
 
