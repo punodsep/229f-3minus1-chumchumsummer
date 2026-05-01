@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -19,6 +20,9 @@ public class GameManager : MonoBehaviour
     public bool isPlaying;
     public bool hasCustomer;
 
+    public GameObject cupPrefab;
+    public Transform cupPos;
+
     void Awake()
     {
         if (Instance == null)
@@ -34,6 +38,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        var systems = FindObjectsByType<EventSystem>(FindObjectsSortMode.None);
+        Debug.Log("EventSystem count = " + systems.Length);
         StartGame();
     }
 
@@ -65,6 +71,15 @@ public class GameManager : MonoBehaviour
 
     public void GenerateOrder()
     {
+        GameObject obj = Instantiate(cupPrefab, cupPos.position, Quaternion.identity);
+
+        GameObject parentObj = GameObject.Find("CupPos");
+
+        if (parentObj != null)
+        {
+            obj.transform.SetParent(parentObj.transform, true);
+        }
+
         currentOrder = new OrderData();
         currentCup = new CupData();
 
@@ -90,8 +105,15 @@ public class GameManager : MonoBehaviour
     void CustomerTimeout()
     {
         Debug.Log("Timeout");
-        hasCustomer = false;
+        GameObject currentCupObj = GameObject.Find("CupManager(Clone)");
+
+        if (currentCupObj != null)
+        {
+            Destroy(currentCupObj);
+        }
+
         SceneManager.LoadScene("OrderScene");
+        hasCustomer = false;
     }
 
     void GameOver()

@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class CupZone : MonoBehaviour
+public class iceZone : MonoBehaviour
 {
-    private int icecount = 0;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("ice"))
@@ -16,8 +15,8 @@ public class CupZone : MonoBehaviour
                 {
                     GameManager.Instance.currentCup.iceAmount++;
                     ice.counted = true;
-                    icecount++;
-                    Debug.Log(icecount);
+
+                    Debug.Log("Syrup: " + GameManager.Instance.currentCup.iceAmount);
                 }
             }
         }

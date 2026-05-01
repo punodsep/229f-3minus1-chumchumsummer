@@ -1,22 +1,23 @@
 ﻿using UnityEngine;
 
-public class IceAutoFreeze : MonoBehaviour
+public class SyrupDrop : MonoBehaviour
 {
     private Rigidbody2D rb;
 
     private bool hasMoved = false;
 
-    [HideInInspector] public bool isInFan = false;
     [HideInInspector] public bool isInCup = false;
-
     [HideInInspector] public bool counted = false;
 
-    public float destroyTime = 10f;
+    public float destroyTime = 3f;
     private float timer = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        rb.gravityScale = 0.5f;
+        rb.linearDamping = 1.5f;
     }
 
     void Update()
@@ -26,7 +27,7 @@ public class IceAutoFreeze : MonoBehaviour
             hasMoved = true;
         }
 
-        if (hasMoved && rb.linearVelocity.magnitude < 0.05f && !isInFan)
+        if (hasMoved && rb.linearVelocity.magnitude < 0.05f)
         {
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;

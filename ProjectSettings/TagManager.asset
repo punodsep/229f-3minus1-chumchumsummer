@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ice
   - ICE
+  - CupStarter
+  - syrup
   layers:
   - Default
   - TransparentFX

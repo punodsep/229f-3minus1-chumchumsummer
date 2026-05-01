@@ -5,6 +5,7 @@ public class IceSpawner : MonoBehaviour
 {
     public GameObject icePrefab;
     public BoxCollider2D spawnArea;
+    public Transform parent;
 
     public float spawnDuration = 5f;
     public float spawnDelay = 0.1f;
@@ -45,6 +46,13 @@ public class IceSpawner : MonoBehaviour
 
         Vector2 spawnPos = new Vector2(x, y);
 
-        Instantiate(icePrefab, spawnPos, Quaternion.identity);
+        GameObject obj = Instantiate(icePrefab, spawnPos, Quaternion.identity);
+
+        GameObject parentObj = GameObject.Find("IceParent");
+
+        if (parentObj != null)
+        {
+            obj.transform.SetParent(parentObj.transform, true);
+        }
     }
 }

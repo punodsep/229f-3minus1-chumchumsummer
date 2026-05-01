@@ -11,8 +11,6 @@ public class DragObject : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        // ตอนเริ่ม = Kinematic
-        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     void OnMouseDown()
@@ -22,13 +20,11 @@ public class DragObject : MonoBehaviour
 
         isDragging = true;
 
-        // 👇 ตอนเริ่มลาก → Dynamic
         rb.bodyType = RigidbodyType2D.Dynamic;
 
-        // กันตก/กันหมุนตอนลาก
-        rb.linearVelocity = Vector2.zero;
+        /*rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
-        rb.gravityScale = 0f;
+        rb.gravityScale = 0f;*/
     }
 
     void OnMouseDrag()
@@ -36,20 +32,15 @@ public class DragObject : MonoBehaviour
         if (isDragging)
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector3(mousePos.x, mousePos.y, transform.position.z) + offset;
+            Vector2 targetPos = new Vector2(mousePos.x, mousePos.y) + (Vector2)offset;
+
+            rb.MovePosition(Vector2.Lerp(rb.position, targetPos, 0.2f));
         }
     }
 
     void OnMouseUp()
     {
         isDragging = false;
-
-        // 👇 เลือกเอาแบบที่ต้องการ
-
-        // แบบที่ 1: ปล่อยแล้วตก (เหมือนโยน)
         rb.gravityScale = 1f;
-
-        // แบบที่ 2: ล็อคกลับเป็น Kinematic
-        // rb.bodyType = RigidbodyType2D.Kinematic;
     }
 }
