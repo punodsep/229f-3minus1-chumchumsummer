@@ -7,7 +7,10 @@ public class Topping : MonoBehaviour
     private bool hasMoved = false;
 
     [HideInInspector] public bool isInCup = false;
+    [HideInInspector] public bool isInJar = false;
     [HideInInspector] public bool counted = false;
+
+    DragObject drag;
 
     public float destroyTime = 5f;
     private float timer = 0f;
@@ -15,6 +18,7 @@ public class Topping : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        drag = GetComponent<DragObject>();
     }
 
     void Update()
@@ -24,14 +28,15 @@ public class Topping : MonoBehaviour
             hasMoved = true;
         }
 
-        if (hasMoved && rb.linearVelocity.magnitude < 0.05f)
+        if (hasMoved && rb.linearVelocity.magnitude < 0.05f && isInCup && !isInJar && !drag.isDragging)
         {
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
             rb.bodyType = RigidbodyType2D.Kinematic;
+            //drag.enabled = false;
         }
 
-        if (!isInCup)
+        if (!isInCup && !isInJar && !drag.isDragging)
         {
             timer += Time.deltaTime;
 

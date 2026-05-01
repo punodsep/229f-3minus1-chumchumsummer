@@ -3,7 +3,7 @@
 public class DragObject : MonoBehaviour
 {
     private Vector3 offset;
-    private bool isDragging = false;
+    public bool isDragging { get; private set; }
 
     private Rigidbody2D rb;
     private Vector2 lastPos;

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7095656922996602169}
   - component: {fileID: 6965125915126677640}
   - component: {fileID: 6237841046382353847}
+  - component: {fileID: -8870114896328636748}
   m_Layer: 0
   m_Name: Jelly
   m_TagString: topping
@@ -175,3 +176,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cacc8c75debf834aae59dfa0ac5fdbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAngle: 30
+--- !u!114 &-8870114896328636748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433857997539571235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2572e32d49358a4f9a786abcadb69f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInCup: 0
+  counted: 0
+  destroyTime: 5

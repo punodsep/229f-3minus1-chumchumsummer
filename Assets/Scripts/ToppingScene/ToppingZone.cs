@@ -1,14 +1,21 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ToppingZone : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
-    {
+    { 
         if (other.CompareTag("topping"))
         {
-            Topping topping = other.GetComponent<Topping>();
+            Topping topping = other.GetComponentInParent<Topping>();
             if (topping != null)
             {
+                GameObject parentObj = GameObject.Find("ToppingParent");
+
+                if (parentObj != null)
+                {
+                    topping.transform.SetParent(parentObj.transform, true);
+                }
+
                 topping.isInCup = true;
 
                 if (!topping.counted)
@@ -26,7 +33,7 @@ public class ToppingZone : MonoBehaviour
     {
         if (other.CompareTag("topping"))
         {
-            Topping topping = other.GetComponent<Topping>();
+            Topping topping = other.GetComponentInParent<Topping>();
             if (topping != null)
             {
                 topping.isInCup = false;

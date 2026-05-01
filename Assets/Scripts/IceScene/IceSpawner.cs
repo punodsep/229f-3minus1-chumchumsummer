@@ -5,7 +5,6 @@ public class IceSpawner : MonoBehaviour
 {
     public GameObject icePrefab;
     public BoxCollider2D spawnArea;
-    public Transform parent;
 
     public float spawnDuration = 5f;
     public float spawnDelay = 0.1f;
