@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public GameObject cupPrefab;
     public Transform cupPos;
 
+    public bool canServe;
+
     void Awake()
     {
         if (Instance == null)
@@ -99,6 +101,7 @@ public class GameManager : MonoBehaviour
     {
         score += addScore;
         hasCustomer = false;
+        canServe = false;
         SceneManager.LoadScene("OrderScene");
     }
 
@@ -112,8 +115,9 @@ public class GameManager : MonoBehaviour
             Destroy(currentCupObj);
         }
 
-        SceneManager.LoadScene("OrderScene");
         hasCustomer = false;
+        canServe = false;
+        SceneManager.LoadScene("OrderScene");
     }
 
     void GameOver()
@@ -121,4 +125,6 @@ public class GameManager : MonoBehaviour
         isPlaying = false;
         SceneManager.LoadScene("GameOverScene");
     }
+
+
 }

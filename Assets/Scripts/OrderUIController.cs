@@ -10,17 +10,24 @@ public class OrderUIController : MonoBehaviour
     public TextMeshProUGUI syrupText;
     public TextMeshProUGUI toppingText;
 
+    public GameObject serveButton;
+    public GameObject spawnButton;
+
     void Update()
     {
         if (GameManager.Instance.hasCustomer)
         {
             orderPanel.SetActive(true);
-
             UpdateOrderUI();
+
+            serveButton.SetActive(GameManager.Instance.canServe);
+            spawnButton.SetActive(false);
         }
         else
         {
             orderPanel.SetActive(false);
+            serveButton.SetActive(false);
+            spawnButton.SetActive(true);
         }
     }
 

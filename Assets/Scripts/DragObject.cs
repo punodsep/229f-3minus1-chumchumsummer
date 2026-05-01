@@ -6,11 +6,13 @@ public class DragObject : MonoBehaviour
     private bool isDragging = false;
 
     private Rigidbody2D rb;
+    private Vector2 lastPos;
+
+    public float maxAngle = 30f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     void OnMouseDown()
@@ -21,10 +23,9 @@ public class DragObject : MonoBehaviour
         isDragging = true;
 
         rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.gravityScale = 0.5f;
 
-        /*rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        rb.gravityScale = 0f;*/
+        lastPos = rb.position;
     }
 
     void OnMouseDrag()
@@ -35,6 +36,15 @@ public class DragObject : MonoBehaviour
             Vector2 targetPos = new Vector2(mousePos.x, mousePos.y) + (Vector2)offset;
 
             rb.MovePosition(Vector2.Lerp(rb.position, targetPos, 0.2f));
+
+            Vector2 velocity = (rb.position - lastPos) / Time.deltaTime;
+
+            float torque = -velocity.x * 0.03f;
+            rb.AddTorque(torque);
+
+            lastPos = rb.position;
+
+            ClampRotation();
         }
     }
 
@@ -42,5 +52,16 @@ public class DragObject : MonoBehaviour
     {
         isDragging = false;
         rb.gravityScale = 1f;
+    }
+
+    void ClampRotation()
+    {
+        float z = transform.eulerAngles.z;
+
+        if (z > 180) z -= 360;
+
+        z = Mathf.Clamp(z, -maxAngle, maxAngle);
+
+        transform.rotation = Quaternion.Euler(0, 0, z);
     }
 }
