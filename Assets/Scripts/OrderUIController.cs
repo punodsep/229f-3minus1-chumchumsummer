@@ -10,24 +10,35 @@ public class OrderUIController : MonoBehaviour
     public TextMeshProUGUI syrupText;
     public TextMeshProUGUI toppingText;
 
-    public GameObject serveButton;
-    public GameObject spawnButton;
+    public GameObject resultPanel;
+    public TextMeshProUGUI gradeText;
+    public TextMeshProUGUI scoreText;
+
 
     void Update()
     {
-        if (GameManager.Instance.hasCustomer)
+        var gm = GameManager.Instance;
+
+        if (gm.hasCustomer)
         {
             orderPanel.SetActive(true);
             UpdateOrderUI();
-
-            serveButton.SetActive(GameManager.Instance.canServe);
-            spawnButton.SetActive(false);
         }
         else
         {
             orderPanel.SetActive(false);
-            serveButton.SetActive(false);
-            spawnButton.SetActive(true);
+        }
+
+        if (gm.showResult)
+        {
+            resultPanel.SetActive(true);
+
+            gradeText.text = gm.lastGrade;
+            scoreText.text = gm.lastScore.ToString();
+        }
+        else
+        {
+            resultPanel.SetActive(false);
         }
     }
 

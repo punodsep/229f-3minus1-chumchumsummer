@@ -3,15 +3,19 @@
 public class CustomerButton : MonoBehaviour
 {
     public GameObject waitingPanel;
+    public GameObject serveButton;
 
     void Start()
     {
-        if (!GameManager.Instance.hasCustomer)
+        var gm = GameManager.Instance;
+        if (!gm.hasCustomer)
         {
+            serveButton.SetActive(false);
             waitingPanel.SetActive(true);
         }
         else
         {
+            serveButton.SetActive(gm.canServe && !gm.showResult);
             waitingPanel.SetActive(false);
         }
     }

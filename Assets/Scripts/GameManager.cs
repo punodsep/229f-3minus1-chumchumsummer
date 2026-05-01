@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour
 
     public bool canServe;
 
+    public string lastGrade;
+    public int lastScore;
+
+    public bool showResult;
+
     void Awake()
     {
         if (Instance == null)
@@ -85,9 +90,9 @@ public class GameManager : MonoBehaviour
         currentOrder = new OrderData();
         currentCup = new CupData();
 
-        currentOrder.iceAmount = Random.Range(1, 5);
-        currentOrder.syrupAmount = Random.Range(1, 5);
-        currentOrder.toppingCount = Random.Range(0, 3);
+        currentOrder.iceAmount = Random.Range(30, 80);
+        currentOrder.syrupAmount = Random.Range(20, 50);
+        currentOrder.toppingCount = Random.Range(1, 10);
 
         currentCustomerTime = customerMaxTime;
     }
@@ -95,6 +100,9 @@ public class GameManager : MonoBehaviour
     {
         GenerateOrder();
         hasCustomer = true;
+        canServe = false;
+
+        showResult = false;
     }
 
     public void ServeSuccess(int addScore)
@@ -102,7 +110,12 @@ public class GameManager : MonoBehaviour
         score += addScore;
         hasCustomer = false;
         canServe = false;
-        SceneManager.LoadScene("OrderScene");
+        GameObject currentCupObj = GameObject.Find("CupManager(Clone)");
+
+        if (currentCupObj != null)
+        {
+            Destroy(currentCupObj);
+        }
     }
 
     void CustomerTimeout()
