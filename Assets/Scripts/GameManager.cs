@@ -36,6 +36,11 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> customers;
     private GameObject currentCustomer;
+    public GameObject orderUI;
+    public GameObject orderBill;
+
+    public GameObject endPanel;
+    public GameObject gamePanel;
 
     void Awake()
     {
@@ -123,6 +128,8 @@ public class GameManager : MonoBehaviour
         SpawnRandomCustomer();
         hasCustomer = true;
         canServe = false;
+        orderUI.SetActive(true);
+        orderBill.SetActive(true);
 
         showResult = false;
     }
@@ -175,9 +182,50 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
         isPlaying = false;
-        SceneManager.LoadScene("GameOverScene");
+        lastScore = score;
+        endPanel.SetActive(true);
+        gamePanel.SetActive(false);
+
+        int highScore = PlayerPrefs.GetInt("HighScore", 0);
+
+        if (score > highScore)
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+            PlayerPrefs.Save();
+        }
+
         Time.timeScale = 0f;
     }
 
+    public void ResetGame()
+    {
+        Time.timeScale = 1f;
+
+        score = 0;
+        currentGameTime = gameMaxTime;
+
+        hasCustomer = false;
+        canServe = false;
+        isPlaying = true;
+        showResult = false;
+
+        currentOrder = null;
+        currentCup = null;
+
+        if (currentCustomer != null)
+        {
+            currentCustomer.SetActive(false);
+            currentCustomer = null;
+        }
+
+        GameObject cup = GameObject.Find("CupManager(Clone)");
+        if (cup != null)
+        {
+            Destroy(cup);
+        }
+
+        endPanel.SetActive(false);
+        gamePanel.SetActive(true);
+    }
 
 }

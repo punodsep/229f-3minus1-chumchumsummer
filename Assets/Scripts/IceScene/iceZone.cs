@@ -16,7 +16,7 @@ public class iceZone : MonoBehaviour
                     GameManager.Instance.currentCup.iceAmount++;
                     ice.counted = true;
 
-                    Debug.Log("Syrup: " + GameManager.Instance.currentCup.iceAmount);
+                    Debug.Log("Ice: " + GameManager.Instance.currentCup.iceAmount);
                 }
             }
         }

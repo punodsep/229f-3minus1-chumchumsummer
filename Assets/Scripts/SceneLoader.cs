@@ -64,4 +64,17 @@ public class SceneLoader : MonoBehaviour
             cup.transform.position = cupPosObj.transform.position;
         }
     }
+
+    public void GoToGame()
+    {
+        Time.timeScale = 1f;
+        GameManager.Instance.ResetGame();
+        SceneManager.LoadScene("OrderScene");
+    }
+
+    public void GotoMenu()
+    {
+        Time.timeScale = 0f;
+        SceneManager.LoadScene("MenuScene");
+    }
 }
