@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 299804277}
   - component: {fileID: 299804276}
   - component: {fileID: 299804275}
+  - component: {fileID: 299804278}
   m_Layer: 5
   m_Name: Go to Ice Button
   m_TagString: Untagged
@@ -401,6 +402,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299804273}
   m_CullTransparentMesh: 1
+--- !u!114 &299804278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299804273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07db75bb134a4a840b36b263cd45bb15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSFX: Hold
+  clickSFX: Click
 --- !u!1 &502305253
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +571,7 @@ GameObject:
   - component: {fileID: 613266588}
   - component: {fileID: 613266587}
   - component: {fileID: 613266586}
+  - component: {fileID: 613266589}
   m_Layer: 5
   m_Name: SpawnCustomer
   m_TagString: Untagged
@@ -651,30 +667,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299804273}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CustomerRandomizer, Assembly-CSharp
-        m_MethodName: SpawnRandomCustomer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &613266587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,6 +705,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613266584}
   m_CullTransparentMesh: 1
+--- !u!114 &613266589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613266584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07db75bb134a4a840b36b263cd45bb15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSFX: Hold
+  clickSFX: Click
 --- !u!1 &672563524
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +731,7 @@ GameObject:
   - component: {fileID: 672563528}
   - component: {fileID: 672563527}
   - component: {fileID: 672563526}
+  - component: {fileID: 672563529}
   m_Layer: 5
   m_Name: Serve Button
   m_TagString: Untagged
@@ -870,6 +877,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672563524}
   m_CullTransparentMesh: 1
+--- !u!114 &672563529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672563524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07db75bb134a4a840b36b263cd45bb15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSFX: Hold
+  clickSFX: Click
 --- !u!1 &781858691
 GameObject:
   m_ObjectHideFlags: 0

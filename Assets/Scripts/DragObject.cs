@@ -17,6 +17,7 @@ public class DragObject : MonoBehaviour
 
     void OnMouseDown()
     {
+        SFXManager.Instance.PlaySFX("GrabObject");
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         offset = transform.position - new Vector3(mousePos.x, mousePos.y, transform.position.z);
 

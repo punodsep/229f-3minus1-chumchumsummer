@@ -22,6 +22,7 @@ public class FanZone : MonoBehaviour
         {
             isOn = true;
             windEffect.Play();
+            SFXManager.Instance.PlaySFX("FanWind");
             yield return new WaitForSeconds(onTime);
 
             isOn = false;

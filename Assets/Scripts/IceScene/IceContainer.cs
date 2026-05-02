@@ -52,6 +52,7 @@ public class IceContainer : MonoBehaviour
 
         sr.enabled = false;
         iceContainerOpen.SetActive(true);
+        SFXManager.Instance.PlaySFX("IceBucket");
 
         Instantiate(spawnPrefab, spawnPoint.position, Quaternion.identity);
 
@@ -59,6 +60,7 @@ public class IceContainer : MonoBehaviour
 
         sr.enabled = true;
         iceContainerOpen.SetActive(false);
+        SFXManager.Instance.PlaySFX("IceBucket");
 
         isCooldown = false;
     }

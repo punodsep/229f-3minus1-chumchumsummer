@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -124,14 +126,33 @@ public class GameManager : MonoBehaviour
     }
     public void SpawnCustomer()
     {
+        StartCoroutine(SpawnCustomerRoutine());
+    }
+
+    IEnumerator SpawnCustomerRoutine()
+    {
+        SFXManager.Instance.PlaySFX("CallCustomer");
+
+        yield return new WaitForSeconds(3f);
+
+        Transform t = GameObject.Find("Canvas").transform.Find("Go to Ice Button");
+        t.gameObject.SetActive(true);
+
         GenerateOrder();
         SpawnRandomCustomer();
         hasCustomer = true;
         canServe = false;
+
         orderUI.SetActive(true);
         orderBill.SetActive(true);
 
+        SFXManager.Instance.PlaySFX("OrderBill");
+
         showResult = false;
+    }
+    public GameObject GetCurrentCustomer()
+    {
+        return currentCustomer;
     }
 
     public void SpawnRandomCustomer()
@@ -148,20 +169,37 @@ public class GameManager : MonoBehaviour
         currentCustomer = customers[index];
 
         currentCustomer.SetActive(true);
+        CustomerVisual visual = currentCustomer.GetComponent<CustomerVisual>();
+        if (visual != null)
+        {
+            visual.SetDefault();
+        }
     }
 
     public void ServeSuccess(int addScore)
     {
+        StartCoroutine(ServeSuccessRoutine(addScore));
+    }
+
+    IEnumerator ServeSuccessRoutine(int addScore)
+    {
+        SFXManager.Instance.PlaySFX("Customer");
+
+        yield return new WaitForSeconds(3f);
+
+        SFXManager.Instance.PlaySFX("Coin");
+
         score += addScore;
         hasCustomer = false;
         canServe = false;
-        GameObject currentCupObj = GameObject.Find("CupManager(Clone)");
 
+        GameObject currentCupObj = GameObject.Find("CupManager(Clone)");
         if (currentCupObj != null)
         {
             Destroy(currentCupObj);
         }
     }
+
 
     void CustomerTimeout()
     {
@@ -185,6 +223,7 @@ public class GameManager : MonoBehaviour
         lastScore = score;
         endPanel.SetActive(true);
         gamePanel.SetActive(false);
+        SFXManager.Instance.PlaySFX("Coin");
 
         int highScore = PlayerPrefs.GetInt("HighScore", 0);
 

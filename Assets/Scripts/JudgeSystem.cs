@@ -69,6 +69,18 @@ public class JudgeSystem : MonoBehaviour
         GameManager.Instance.lastGrade = grade;
         GameManager.Instance.showResult = true;
 
+        GameObject customer = GameManager.Instance.GetCurrentCustomer();
+
+        if (customer != null)
+        {
+            CustomerVisual visual = customer.GetComponent<CustomerVisual>();
+
+            if (visual != null && score >= 18)
+            {
+                visual.SetHappy();
+            }
+        }
+
         GameManager.Instance.ServeSuccess(score);
     }
 }

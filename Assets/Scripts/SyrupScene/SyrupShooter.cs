@@ -4,7 +4,6 @@ public class SyrupShooter : MonoBehaviour
 {
     public GameObject syrupPrefab;
     public Transform shootPoint;
-    public Transform parent;
 
     public float shootForce = 3f;
     public float fireRate = 0.05f;
@@ -43,6 +42,7 @@ public class SyrupShooter : MonoBehaviour
 
     void OnMouseDown()
     {
+        SFXManager.Instance.PlaySFX("Syrup");
         isHolding = true;
     }
 

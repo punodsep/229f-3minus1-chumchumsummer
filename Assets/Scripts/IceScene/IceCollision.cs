@@ -8,6 +8,7 @@ public class IceCollision : MonoBehaviour
     {
         if (other.CompareTag("ICE"))
         {
+            SFXManager.Instance.PlaySFX("ShaveIce");
             Destroy(other.gameObject);
 
             spawner.StartSpawning();
