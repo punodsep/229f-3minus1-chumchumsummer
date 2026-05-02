@@ -5,6 +5,7 @@ public class IceSpawner : MonoBehaviour
 {
     public GameObject icePrefab;
     public BoxCollider2D spawnArea;
+    public GameObject iceOnMachine;
 
     public float spawnDuration = 5f;
     public float spawnDelay = 0.1f;
@@ -22,6 +23,7 @@ public class IceSpawner : MonoBehaviour
     IEnumerator SpawnRoutine()
     {
         isSpawning = true;
+        iceOnMachine.SetActive(true);
 
         float timer = 0f;
 
@@ -34,6 +36,7 @@ public class IceSpawner : MonoBehaviour
         }
 
         isSpawning = false;
+        iceOnMachine.SetActive(false);
     }
 
     void SpawnIce()

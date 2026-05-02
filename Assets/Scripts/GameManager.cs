@@ -1,3 +1,4 @@
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -14,8 +15,11 @@ public class GameManager : MonoBehaviour
     public float customerMaxTime = 20f;
     public float currentCustomerTime;
 
-    public float gameMaxTime = 180f;
+    public float gameMaxTime = 120f;
     public float currentGameTime;
+
+    public int startHour = 16;
+    public int endHour = 18;
 
     public bool isPlaying;
     public bool hasCustomer;
@@ -29,6 +33,9 @@ public class GameManager : MonoBehaviour
     public int lastScore;
 
     public bool showResult;
+
+    public List<GameObject> customers;
+    private GameObject currentCustomer;
 
     void Awake()
     {
@@ -76,11 +83,25 @@ public class GameManager : MonoBehaviour
         hasCustomer = false;
     }
 
+    public string GetFormattedGameTime()
+    {
+        float timePassed = gameMaxTime - currentGameTime;
+
+        int totalMinutes = Mathf.FloorToInt(timePassed); // 1 วิ = 1 นาที
+
+        int hour = startHour + (totalMinutes / 60);
+        int minute = totalMinutes % 60;
+
+        hour = Mathf.Min(hour, endHour); // กันเกิน
+
+        return string.Format("{0:00}:{1:00}", hour, minute);
+    }
+
     public void GenerateOrder()
     {
         GameObject obj = Instantiate(cupPrefab, cupPos.position, Quaternion.identity);
 
-        GameObject parentObj = GameObject.Find("CupPos");
+        GameObject parentObj = GameObject.Find("GameManager");
 
         if (parentObj != null)
         {
@@ -99,10 +120,27 @@ public class GameManager : MonoBehaviour
     public void SpawnCustomer()
     {
         GenerateOrder();
+        SpawnRandomCustomer();
         hasCustomer = true;
         canServe = false;
 
         showResult = false;
+    }
+
+    public void SpawnRandomCustomer()
+    {
+        if (currentCustomer != null)
+        {
+            currentCustomer.SetActive(false);
+        }
+
+        if (customers.Count == 0) return;
+
+        int index = Random.Range(0, customers.Count);
+
+        currentCustomer = customers[index];
+
+        currentCustomer.SetActive(true);
     }
 
     public void ServeSuccess(int addScore)
@@ -130,6 +168,7 @@ public class GameManager : MonoBehaviour
 
         hasCustomer = false;
         canServe = false;
+        currentCustomer.SetActive(false);
         SceneManager.LoadScene("OrderScene");
     }
 
