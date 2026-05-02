@@ -34,7 +34,7 @@ public class OrderUIController : MonoBehaviour
             resultPanel.SetActive(true);
 
             gradeText.text = gm.lastGrade;
-            scoreText.text = gm.lastScore.ToString();
+            scoreText.text = gm.lastScore.ToString() + " บาท";
         }
         else
         {

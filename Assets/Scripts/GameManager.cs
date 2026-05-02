@@ -87,12 +87,12 @@ public class GameManager : MonoBehaviour
     {
         float timePassed = gameMaxTime - currentGameTime;
 
-        int totalMinutes = Mathf.FloorToInt(timePassed); // 1 วิ = 1 นาที
+        int totalMinutes = Mathf.FloorToInt(timePassed);
 
         int hour = startHour + (totalMinutes / 60);
         int minute = totalMinutes % 60;
 
-        hour = Mathf.Min(hour, endHour); // กันเกิน
+        hour = Mathf.Min(hour, endHour);
 
         return string.Format("{0:00}:{1:00}", hour, minute);
     }
@@ -176,6 +176,7 @@ public class GameManager : MonoBehaviour
     {
         isPlaying = false;
         SceneManager.LoadScene("GameOverScene");
+        Time.timeScale = 0f;
     }
 
 

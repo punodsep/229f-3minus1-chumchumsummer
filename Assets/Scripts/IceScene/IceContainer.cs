@@ -13,6 +13,27 @@ public class IceContainer : MonoBehaviour
 
     SpriteRenderer sr;
 
+    private void Awake()
+    {
+        GameObject cupPosObj = GameObject.Find("CupIceScenePos");
+
+        if (cupPosObj == null) return;
+
+        GameObject cup = GameObject.Find("CupManager(Clone)");
+
+        if (cup != null)
+        {
+            cup.transform.position = cupPosObj.transform.position;
+        }
+
+        GameObject orderBillObj = GameObject.Find("OrderBill");
+
+        if (orderBillObj != null)
+        {
+            orderBillObj.SetActive(false);
+        }
+    }
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();

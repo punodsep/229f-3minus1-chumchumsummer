@@ -13,6 +13,20 @@ public class SyrupShooter : MonoBehaviour
     private float timer = 0f;
     private bool isHolding = false;
 
+    private void Awake()
+    {
+        GameObject cupPosObj = GameObject.Find("CupSyrupScenePos");
+
+        if (cupPosObj == null) return;
+
+        GameObject cup = GameObject.Find("CupManager(Clone)");
+
+        if (cup != null)
+        {
+            cup.transform.position = cupPosObj.transform.position;
+        }
+    }
+
     void Update()
     {
         if (isHolding)

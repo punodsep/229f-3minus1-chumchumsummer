@@ -12,6 +12,9 @@ public class SyrupDrop : MonoBehaviour
     public float destroyTime = 3f;
     private float timer = 0f;
 
+    public SpriteRenderer sr;
+    public Sprite inCupSprite;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,6 +35,11 @@ public class SyrupDrop : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
             rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
+        if (isInCup)
+        {
+            sr.sprite = inCupSprite;
         }
 
         if (!isInCup)
