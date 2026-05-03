@@ -49,7 +49,7 @@ public class JudgeSystem : MonoBehaviour
     {
         if (score >= 27) return "เริ่ดเลยล่ะคับ!!";
         if (score >= 18) return "ก็พอกินได้ฮะ";
-        return "ไม่เหมือน\nที่สั่งหนิป้า";
+        return "ไม่เหมือน\nที่สั่งหนิลุง";
     }
 
     public void Serve()

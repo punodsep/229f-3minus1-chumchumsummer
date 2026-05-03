@@ -77,4 +77,9 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 0f;
         SceneManager.LoadScene("MenuScene");
     }
+
+    public void GoToCredit()
+    {
+        SceneManager.LoadScene("CreditScene");
+    }
 }

@@ -3,11 +3,11 @@ using System.Collections;
 
 public class FanZone : MonoBehaviour
 {
-    public float force = 5f;
+    public float force = 2f;
     public bool isOn = false;
 
-    public float onTime = 2f;
-    public float offTime = 2f;
+    public float onTime = 0.5f;
+    public float offTime = 4f;
 
     public ParticleSystem windEffect;
 

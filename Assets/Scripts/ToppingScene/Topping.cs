@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Topping : MonoBehaviour
 {
@@ -19,6 +19,7 @@ public class Topping : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         drag = GetComponent<DragObject>();
+        isInJar = true;
     }
 
     void Update()

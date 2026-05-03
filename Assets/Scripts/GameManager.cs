@@ -17,10 +17,10 @@ public class GameManager : MonoBehaviour
     public float customerMaxTime = 20f;
     public float currentCustomerTime;
 
-    public float gameMaxTime = 120f;
+    public float gameMaxTime = 240f;
     public float currentGameTime;
 
-    public int startHour = 16;
+    public int startHour = 15;
     public int endHour = 18;
 
     public bool isPlaying;
@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Start()
@@ -78,6 +80,15 @@ public class GameManager : MonoBehaviour
 
             if (currentCustomerTime <= 0)
                 CustomerTimeout();
+        }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "CreditScene")
+        {
+            isPlaying = false;
+            gamePanel.SetActive(false);
         }
     }
 

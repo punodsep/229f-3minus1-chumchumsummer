@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -197,84 +205,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
   m_PrefabInstance: {fileID: 53883326}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &55147572
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 55147573}
-  - component: {fileID: 55147574}
-  m_Layer: 0
-  m_Name: boarder (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &55147573
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55147572}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21, y: -0.191, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1316851303}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &55147574
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55147572}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.4731512, y: 0.098893225}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.053697586, y: 1.1977865}
-  m_EdgeRadius: 0
 --- !u!1 &65237951
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,8 +283,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -514,6 +444,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -680,6 +618,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -758,6 +704,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -824,84 +778,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
   m_PrefabInstance: {fileID: 324533491}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &339090555
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 339090556}
-  - component: {fileID: 339090557}
-  m_Layer: 0
-  m_Name: boarder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &339090556
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339090555}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.226, y: -0.176, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1316851303}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &339090557
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339090555}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -0.46585065, y: 0.098893315}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.0682987, y: 1.1977863}
-  m_EdgeRadius: 0
 --- !u!1001 &342689475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -913,6 +789,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -992,6 +876,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1069,6 +961,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -1148,6 +1048,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1225,6 +1133,7 @@ GameObject:
   - component: {fileID: 407901122}
   - component: {fileID: 407901124}
   - component: {fileID: 407901123}
+  - component: {fileID: 407901125}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -1289,6 +1198,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407901121}
   m_CullTransparentMesh: 1
+--- !u!114 &407901125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407901121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710916751b03f26458f588c476d2fbbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxSource: {fileID: 0}
+  click: {fileID: 0}
+  hold: {fileID: 0}
+  callCustomer: {fileID: 0}
+  customer: {fileID: 0}
+  orderBill: {fileID: 0}
+  coin: {fileID: 0}
+  grabObject: {fileID: 0}
+  syrup: {fileID: 0}
+  fanWild: {fileID: 0}
+  shaveIce: {fileID: 0}
+  iceBucket: {fileID: 0}
 --- !u!1001 &442489813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1300,6 +1233,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -1379,6 +1320,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1456,6 +1405,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -1693,8 +1650,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -1820,6 +1777,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1921,9 +1886,9 @@ RectTransform:
   - {fileID: 1750648066}
   m_Father: {fileID: 781858695}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.4, y: -0.38}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -2.5, y: 0}
   m_SizeDelta: {x: 89.1454, y: 40.3064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593203962
@@ -2124,8 +2089,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -2251,6 +2216,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2328,6 +2301,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -2407,6 +2388,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2484,6 +2473,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -2679,6 +2676,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2756,6 +2761,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -2835,6 +2848,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2912,6 +2933,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -3076,6 +3105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1022082145}
   - component: {fileID: 1022082146}
+  - component: {fileID: 1022082147}
   m_Layer: 0
   m_Name: Page 4 - Jar_0
   m_TagString: Untagged
@@ -3153,45 +3183,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1029804872
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1029804873}
-  - component: {fileID: 1029804874}
-  m_Layer: 0
-  m_Name: boarder (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1029804873
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029804872}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.216, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1316851303}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1029804874
+--- !u!61 &1022082147
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029804872}
+  m_GameObject: {fileID: 1022082144}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -3215,21 +3213,21 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.030103385, y: -0.48155802}
+  m_Offset: {x: -0.01340127, y: -0.77246237}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 4.06, y: 5.83}
+    newSize: {x: 4.06, y: 5.83}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4749674, y: 0.03688395}
+  m_Size: {x: 3.7139149, y: 3.7770882}
   m_EdgeRadius: 0
 --- !u!1 &1039466955
 GameObject:
@@ -3397,6 +3395,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3475,6 +3481,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3552,6 +3566,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -3718,6 +3740,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3796,6 +3826,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3873,6 +3911,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -4030,6 +4076,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4108,6 +4162,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4185,6 +4247,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -4330,8 +4400,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -4455,7 +4525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316851303}
   - component: {fileID: 1316851305}
-  - component: {fileID: 1316851304}
+  - component: {fileID: 1316851306}
   m_Layer: 0
   m_Name: JellyJar
   m_TagString: Untagged
@@ -4478,14 +4548,23 @@ Transform:
   m_Children:
   - {fileID: 1022082145}
   - {fileID: 1102251078}
-  - {fileID: 339090556}
-  - {fileID: 1029804873}
-  - {fileID: 55147573}
   - {fileID: 1039466956}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1316851304
-BoxCollider2D:
+--- !u!114 &1316851305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316851301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67583d85a6341043988b753eafbfe1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!68 &1316851306
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4514,34 +4593,23 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.019944012, y: -0.13785115}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.5025872, y: 1.251728}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
---- !u!114 &1316851305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316851301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c67583d85a6341043988b753eafbfe1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Points:
+  - {x: -0.7040491, y: 0.25532168}
+  - {x: -0.7150959, y: -0.55268455}
+  - {x: -0.53998685, y: -0.7335739}
+  - {x: 0.5190421, y: -0.73832774}
+  - {x: 0.71631753, y: -0.60482025}
+  - {x: 0.70972395, y: 0.20296872}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &1336298653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4553,6 +4621,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -4632,6 +4708,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4709,6 +4793,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -4788,6 +4880,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4866,6 +4966,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4943,6 +5051,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -5088,8 +5204,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -5293,6 +5409,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5371,6 +5495,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5448,6 +5580,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -5593,8 +5733,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -5719,6 +5859,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -5864,8 +6012,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -5991,6 +6139,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6068,6 +6224,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -6213,8 +6377,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -6340,6 +6504,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6418,6 +6590,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6495,6 +6675,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -6663,6 +6851,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -6957,6 +7153,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7034,6 +7238,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -7190,6 +7402,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7267,6 +7487,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -7412,8 +7640,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -7539,6 +7767,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7617,6 +7853,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7694,6 +7938,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -7868,6 +8120,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7945,6 +8205,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -8024,6 +8292,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8101,6 +8377,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -8180,6 +8464,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8257,6 +8549,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -8402,8 +8702,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -8595,8 +8895,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -8721,6 +9021,14 @@ PrefabInstance:
     - target: {fileID: 433857997539571235, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_Name
       value: Jelly (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965125915126677640, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8234079907241186020, guid: 783d7900a8b1f9d4b85ca5f5a4047c73, type: 3}
       propertyPath: m_LocalScale.x
@@ -8848,6 +9156,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1925903507}
     m_Modifications:
+    - target: {fileID: 1651497600975934282, guid: 3d57e3f0020d2844f91cb1490a444132, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651497600975934282, guid: 3d57e3f0020d2844f91cb1490a444132, type: 3}
+      propertyPath: m_AngularDamping
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5155025406161424710, guid: 3d57e3f0020d2844f91cb1490a444132, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.12
@@ -9101,8 +9417,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -9460,8 +9776,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -9562,8 +9878,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -9661,8 +9977,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -9734,8 +10050,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -9774,8 +10090,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -9902,8 +10218,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -9929,8 +10245,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -10170,8 +10486,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -10197,8 +10513,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -10327,8 +10643,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -10710,8 +11026,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -10779,8 +11095,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -11094,8 +11410,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -11121,8 +11437,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -11169,8 +11485,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -11314,8 +11630,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -11356,8 +11672,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -12071,8 +12387,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -12319,8 +12635,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -12399,8 +12715,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -12530,8 +12846,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -12729,8 +13045,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -12756,8 +13072,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -12783,8 +13099,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -12831,8 +13147,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -13503,8 +13819,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -13530,8 +13846,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -13777,8 +14093,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -14165,8 +14481,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -14404,8 +14720,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -14722,8 +15038,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -14968,8 +15284,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:
@@ -15207,8 +15523,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDamping: 1.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 5
+  m_AngularDamping: 5
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c5815a8c098e8394f951b970ff4dbac5, type: 2}
   m_IncludeLayers:

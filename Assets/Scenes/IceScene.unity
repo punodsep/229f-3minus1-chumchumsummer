@@ -6549,9 +6549,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e10890fa316c464793139e73eb2a05a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 20
+  force: 10
   isOn: 0
-  onTime: 5
+  onTime: 2
   offTime: 5
   windEffect: {fileID: 672168803}
 --- !u!61 &1725198912
